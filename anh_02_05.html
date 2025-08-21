@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/bb430b1be6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Background Slider</title>
+  </head>
+  <body>
+    <div class="slider-container">
+      <!-- ảnh 1 -->
+      <div
+        class="slide"
+        style="
+          background-image: url('./05_02/0c72d60032c2809cd9d34.jpg');
+        "
+      >
+         <img src='./05_02/0c72d60032c2809cd9d34.jpg' alt="Image" class="slide-image">
+      </div>
+      <!-- ảnh 2 -->
+      <div
+        class="slide"
+        style="
+          background-image: url('./05_02/0e9a26e2c220707e29311.jpg');
+        "
+      >
+        <img src="./05_02/0e9a26e2c220707e29311.jpg" alt="image" class="slide-image">
+      </div>
+      <!-- ảnh 3 -->
+      <div
+        class="slide"
+        style="
+          background-image: url('./05_02/6f42e9300df2bface6e32_rotate.jpg');
+        "
+      >
+
+        <img src="./05_02/6f42e9300df2bface6e32.jpg_rotate" alt="image" class="slide-image">
+      </div>
+      <!-- ảnh 4 -->
+      <div
+        class="slide"
+        style="
+          background-image: url('./05_02/13a4870427c4959accd5.jpg');
+        "
+      >
+        <img src="./05_02/13a4870427c4959accd5.jpg" alt="image" class="slide-image">
+      </div>
+      <!-- ảnh 5 -->
+      <div
+        class="slide"
+        style="
+          background-image: url('./05_02/2542befe1e3eac60f52f.jpg');
+        "
+      >
+        <img src="./05_02/2542befe1e3eac60f52f.jpg" alt="image" class="slide-image">
+      </div>
+    <!-- ảnh 6 -->
+  <div class="slide" style="background-image: url('./05_02/a4fb82b66674d42a8d653_crop.jpg');">
+    <img src="./05_02/a4fb82b66674d42a8d653_crop.jpg" alt="Hình ảnh 6" class="slide-image">
+  </div>
+  <!-- ảnh 7 -->
+  <div class="slide" style="background-image: url('./05_02/b1472a69ceab7cf525ba7.jpg');">
+    <img src="./05_02/b1472a69ceab7cf525ba7.jpg" alt="Hình ảnh 7" class="slide-image">
+  </div>
+  <!-- ảnh 8 -->
+  <div class="slide" style="background-image: url('./05_02/b1760424e0e652b80bf76.jpg');">
+    <img src="./05_02/b1760424e0e652b80bf76_crop.jpg" alt="Hình ảnh 8" class="slide-image">
+  </div>
+  <div class="slide" style="background-image: url('./05_02/c1d1647ac4ba76e42fab.jpg');">
+    <img src="./05_02/c1d1647ac4ba76e42fab.jpg" alt="Hình ảnh 9" class="slide-image">
+  </div>
+  <div class="slide" style="background-image: url('./05_02/cc1f855a6198d3c68a895.jpg');">
+    <img src="./05_02/cc1f855a6198d3c68a895_crop.jpg" alt="Hình ảnh 10" class="slide-image">
+  </div>
+
+      <button class="arrow left-arrow" id="left">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+
+      <button class="arrow right-arrow" id="right">
+        <i class="fas fa-arrow-right"></i>
+      </button>
+      <!--  -->
+         <button class="back_btn" onclick="Buttons_back()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+    </div>
+    <script src="script.js"></script>
+    <script>  
+      function Buttons_back() {
+      window.location.href = '02_05.html';
+  } </script>
+  </body>
+</html>

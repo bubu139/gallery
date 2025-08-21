@@ -1,0 +1,61 @@
+body {
+    min-height: 100vh;
+    background: linear-gradient(#051f30, #000000);
+}
+
+ .layout {
+            width:auto;
+            height: 150px; /* Tăng chiều cao để chứa hình ảnh */
+            left: 30px;
+           /* border: 2px solid  white;*/
+            border-radius: 5px;
+            margin: 20px;
+            display: inline-block;
+            text-align: center;
+            position: relative;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .layout:hover {
+            transform: scale(1.05); /* Hiệu ứng phóng to khi hover */
+            filter: brightness(1.2);
+        }
+
+        .layout::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            width: 40px;
+            height: 10px;
+            border-bottom: none;
+/*            border-radius: 5px 5px 0 0;*/
+        }
+
+        .layout-image {
+            width: auto; /* Kích thước hình ảnh */
+            height: 150px;
+               left: 100px;
+           border-radius: 100px;
+            margin-top: 0px;
+            object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+            border-radius: 3px; /* Bo góc nhẹ cho hình ảnh */
+        }
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 85px; /* bình thường */
+    transition: margin-left 0.4s ease; /* mượt */
+    padding: 20px;
+}
+
+.layout {
+    transition: transform 0.4s ease;
+}
+
+.menu:hover ~ .content-wrapper {
+    margin-left: 260px; /* khi menu mở */
+}
